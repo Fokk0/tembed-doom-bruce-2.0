@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>T-Embed CC1101 Plus: Bruce + Doom</title>
+<style>
+  :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+  body { max-width: 640px; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
+  esp-web-install-button { display: block; margin: 1.5rem 0; }
+</style>
+</head>
+<body>
+<h1>Bruce + Doom für den T-Embed CC1101 Plus</h1>
+<p>Ein Klick flasht Bootloader, Partitionstabelle, Bruce, Doom und das Shareware-WAD.</p>
+<ol>
+  <li>Chrome oder Edge am Desktop verwenden.</li>
+  <li>T-Embed per USB-C (Datenkabel) anschließen.</li>
+  <li>Auf „Installieren“ klicken und den Port des Geräts wählen.</li>
+</ol>
+<esp-web-install-button manifest="manifest.json">
+  <span slot="unsupported">Dieser Browser unterstützt Web Serial nicht – bitte Chrome oder Edge nutzen.</span>
+</esp-web-install-button>
+<p><small>Wird das Gerät nicht erkannt: Drehregler-Taste (BOOT) gedrückt halten, USB einstecken, dann erneut versuchen.
+Beim Flashen wird der gesamte Flash gelöscht (Bruce-Einstellungen im internen Speicher gehen verloren).</small></p>
+<script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+</body>
+</html>
